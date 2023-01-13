@@ -1,4 +1,4 @@
 # Basic-training-plan
 
 Day - 0 Shell script Assignment
-https://github.com/Sheetal-gour/Basic-training-plan/blob/main/shell/assignment.sh
+https://docs.google.com/document/d/14eiUeKfk18tASCrHYdU3wItGxwtSEU5QtWmjnqpffHg/edit
