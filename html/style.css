@@ -1,0 +1,103 @@
+*{
+    padding:0;
+    margin:0;
+    background-color: white ;
+}
+body{
+    margin:auto auto;
+    
+}
+.container{
+    padding:5rem;
+    width:50%;
+    margin: auto ;
+    height:100%;
+    background-color: rgb(247, 210, 210);
+    
+}
+.header{
+    padding: 5rem;
+    margin:2rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: overline;
+    border: 2px solid black;
+    box-sizing: content-box;
+    font-family:fantasy;
+    background-color: rgb(207, 77, 77);
+}
+.heading , form{
+    background: transparent;
+}
+.body_form{
+    margin:2rem;
+    font-family:fantasy;
+    padding:2rem 5rem;
+    text-align: center;
+    background-color: rgb(240, 186, 186);
+    border: 2px solid black;
+    box-sizing: content-box;
+    
+}
+.input{
+    padding:1.2rem;
+    margin: auto 2rem;
+}
+input{
+    font-size: 1.3rem;
+    background-color: rgb(181, 252, 181);
+}
+button{
+    color:white;
+    font-size: 1rem;
+    border-radius: 10%;
+    text-align: center;
+    padding:1.2rem;
+}
+.list{
+    background-color: blue;
+    margin-top:20px;
+}
+#add{
+    background-color: rgb(52, 77, 15);
+    width:5rem;
+}
+.delete{
+    background-color: rgb(240, 53, 29);
+    width:5rem;
+}
+.update{
+    width:5rem;
+    background-color: rgb(223, 219, 32);
+    color:black;
+}
+.footer{
+    margin:2rem;
+    font-family:fantasy;
+    padding:2rem 5rem;
+    text-align: center;
+    background-color: rgb(232, 255, 195);
+    border: 2px solid black;
+    box-sizing: content-box;
+
+}
+.item{
+    background-color: transparent;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns:3fr 2fr;
+    text-transform: capitalize;
+}
+.item > div{
+    display: inline;
+}
+.item_task{
+    font-size: 1.3rem;
+    padding:1.2rem;
+    margin:1rem;
+    border: 2px solid black;
+}
+ul{
+    list-style: none;
+}

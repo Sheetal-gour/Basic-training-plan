@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="heading">To-do App</h1>
+            <!-- <button class="list" id="show">
+                Show List
+            </button> -->
+        </div>
+        <div class="body_form" id="body_form">
+            <form action="">
+                <input type="text" name="item" id="item" class="input" placeholder="Add task">
+                <button type="submit" class="input" id="add">Add</button>
+            </form>
+        </div>
+        <div class="footer" id = "footer">
+            <!-- <div class="item">
+                <span id="task1">Task1</span>
+                <button id="update">Update</button>
+                <button id="delete">Delete</button>
+            </div> -->
+            <div id="task_list">
+            </div>
+        </div>
+    </div>
+   
+</body>
+
+<script src="main.js"></script>
+<!-- 
+<script>
+
+    // Adding item to our list 
+    var add = document.getElementById('add');
+    var footer = document.getElementsByClassName('footer');
+    var count = 1
+    var all_tasks = new Array();
+
+
+    add.addEventListener('click' , (event)=> {
+        event.preventDefault();
+        var task = document.createElement('li');
+
+        var item = document.getElementById('item');
+
+        var dataInsideInput = item.value;
+        item.value='';
+
+        
+        task.innerHTML = `
+        <div class="item">
+            <span id="task${count}" class='item_task'>${dataInsideInput}</span>
+            <button id="update${count}" class='update' >Update</button>
+            <button id="delete${count}" class='delete'>Delete</button>
+        </div>
+        `
+        count++;
+
+        all_tasks.push(task);
+
+        document.getElementById('task_list').appendChild(task);
+       // document.getElementById('task_list').removeChild(task);
+        
+        
+    })
+
+    // Showing list of to-do 
+    var del = document.getElementsByClassName('delete');
+     console.log(del);
+    for(d in del)
+    {
+        d.addEventListener('click',(event)=>{
+             document.getElementById('task_list').removeChild(d.parentElement);
+        });
+
+        
+    }
+
+    var show = document.getElementById('show');
+    show.addEventListener('click' , (event)=> {
+        event.preventDefault();
+        var list = document.getElementById('task_list');
+        console.log(all_tasks);
+
+        var form = document.getElementById('body_form');
+        form.style.display = 'none';
+        
+    })
+
+
+</script> -->
+</html>
