@@ -30,14 +30,17 @@ reg.addEventListener('click' , (event)=>{
     count++;
 
 });
-console.log(localStorage.length)
+
 for(let i=0;i<localStorage.length;i++)
 {
     var x = localStorage.getItem(localStorage.key(i));
     x = JSON.parse(x);
 
     
-    // console.log(x));
-    console.log(x['username'] + ' ' + x['email']);
+    for(key in x){
+        console.log(key,x[key])
+    }
+
+    const outer_div = document.createElement('div')
+
 }
-  
