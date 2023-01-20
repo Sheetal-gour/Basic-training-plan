@@ -1,8 +1,8 @@
 // window.addEventListener('load', ()=>{
 
     const add = document.getElementById('add');
+    // var count = localStorage.getItem('count');
     
-    // var count = 1;
 
     add.addEventListener('click' , (event)=> {
         event.preventDefault();
@@ -45,8 +45,11 @@
 
         
 
-        // localStorage.setItem(`task${count}`,outer_div);
+        // localStorage.setItem(`task${count}`,dataInsideInput);
+
+        // count++;
         document.getElementById('task_list').appendChild(outer_div);
+        
         // console.log(localStorage.key);
 
 
@@ -59,10 +62,17 @@
         
        // document.getElementById('task_list').removeChild(task);
         
-        del.addEventListener('click' , ()=>{
-            document.getElementById('task_list').removeChild(outer_div);
-            // localStorage.removeItem(`task${count}`);
-        });
+       del.addEventListener('click' , ()=>{
+        document.getElementById('task_list').removeChild(outer_div);
+
+        // localStorage.removeItem(`task${count}`);
+
+    //     for(let i=0;i<localStorage.length;i++)
+    //     {
+    //         if( localStorage.getItem(localStorage.key(i)) == dataInsideInput)
+    //         localStorage.removeItem(localStorage.key(i));
+    //     }
+    });
 
         upd.addEventListener('click' , ()=>{
             
@@ -78,11 +88,19 @@
         {
             upd.innerText = "Edit";
             
+            // var dataAfterEdit = task.value;
+            // for(let i=0;i<localStorage.length;i++)
+            // {
+            //     if( localStorage.getItem(localStorage.key(i)) == dataInsideInput)
+            //     localStorage.setItem(localStorage.key(i) , dataAfterEdit);
+            // }
+            // dataInsideInput = dataAfterEdit
             task.style.backgroundColor = "rgb(181, 252, 181)";
             task.setAttribute('readonly','readonly');
         }
         });
 
+        
         
     });
 
@@ -100,6 +118,22 @@
 //       }
     
 
+
+// });
+
+// window.addEventListener('load' , ()=>{
+
+//     for(let i=0;i<localStorage.length;i++)
+//     {
+//         if(localStorage.key(i) != 'count')
+//         {
+//             var c = localStorage.getItem(localStorage.key(i)) ;
+//             outer_div = document.createElement('div')
+//             outer_div.classList.add('item', 'padd')
+//             outer_div.innerHTML = `<p> ${c} </p>`
+//             document.getElementById('todo_task_list').appendChild(outer_div);
+//         }
+//     }
 
 // });
 
