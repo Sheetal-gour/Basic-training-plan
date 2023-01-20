@@ -64,3 +64,13 @@ p,a {
     border-radius: 10%;
     font-size: 1.3rem;
 }
+.card{
+    width:50%;
+    height:fit-content;
+    padding:1rem;
+    margin:auto;
+    background-color: coral;
+}
+.card > h1 , h2,h3,h4,h5{
+    padding:1rem;
+}
