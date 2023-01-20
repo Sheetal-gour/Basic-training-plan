@@ -45,3 +45,15 @@ p,a {
     margin-top: 2rem;
     display: inline;
 }
+#container{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    text-align: center;
+    padding:2rem;
+    margin:auto 2rem;
+    background-color: rgb(143, 188, 150);
+    color: white;
+    
+}
