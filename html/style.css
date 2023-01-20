@@ -5,11 +5,13 @@
 }
 body{
     margin:auto auto;
-    
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(2,1fr);
 }
 .container{
     padding:5rem;
-    width:50%;
+    width:80%;
     margin: auto ;
     height:100%;
     background-color: rgb(247, 210, 210);
@@ -32,7 +34,7 @@ body{
 .body_form{
     margin:2rem;
     font-family:fantasy;
-    padding:2rem 5rem;
+    padding:2rem 1rem;
     text-align: center;
     background-color: rgb(240, 186, 186);
     border: 2px solid black;
@@ -41,10 +43,11 @@ body{
 }
 .input{
     padding:1.2rem;
-    margin: auto 2rem;
+    margin: auto 1rem;
 }
 input{
     font-size: 1.3rem;
+    width: 50%;
     background-color: rgb(181, 252, 181);
 }
 button{
@@ -72,7 +75,7 @@ button{
     color:black;
 }
 .footer{
-    margin:2rem;
+    margin:1rem;
     font-family:fantasy;
     padding:2rem 5rem;
     text-align: center;
@@ -82,7 +85,7 @@ button{
 
 }
 .item{
-    background-color: transparent;
+    /* background-color: transparent; */
     width: 100%;
     display: grid;
     align-items: center;
@@ -100,4 +103,8 @@ button{
 }
 ul{
     list-style: none;
+}
+.padd{
+    padding:2rem;
+    margin:1rem;
 }

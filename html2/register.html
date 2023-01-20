@@ -9,32 +9,34 @@
 </head>
 <body>
 
-    <div class="btn">
-        <a id="showList" href="show_users.html">Show User List</a>
-    </div>
+    
     <div class="container">
         
             <div class="registeration_container">
-            <h1>Registeration Form</h1>
+            <h1>Registration Form</h1>
+            <ul id="error_reg"> 
+
+            </ul>
             <form action="#">
-                <label for="email">Email Address : </label>
-                <input type="email" name="email" id="email"   required>
-            <br>
-            <label for="text">Username : </label>
+                <label for="text">Username : </label>
                 <input type="text" name="username" id="username" required>
             <br>
-                <label for="password">Password : </label>
-                <input type="password" name="password" id="password" required>
-            <br>
+                
             <label for="fist">First name : </label>
                 <input type="text" name="first" id="first" required>
             <br>
             <label for="last">Last name : </label>
             <input type="text" name="last" id="last"  required>
             <br>
+            <label for="email">Email Address : </label>
+                <input type="email" name="email" id="email"   required>
+            <br>
+            <label for="password">Password : </label>
+                <input type="password" name="password" id="password" required>
+            <br>
             <label for="gender">Gender : </label>
                 <select name="gender" id="gender" required>  
-                    <option value="male" selected >Male</option>
+                    <option value="male" >Male</option>
                     <option value="female">Female</option>
                 </select>
                 <br>
@@ -53,5 +55,6 @@
        
     </div>
 </body>
+<script src="register.js"></script>
 <script src="main.js"></script>
 </html>

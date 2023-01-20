@@ -4,10 +4,11 @@ for(let i=0;i<localStorage.length;i++)
     x = JSON.parse(x);
 
     
-    for(key in x){
-        console.log(key,x[key])
-    }
+    // for(key in x){
+    //     console.log(key,x[key])
+    // }
 
+    if(localStorage.key(i) != 'count'){
     const outer_div = document.createElement('div')
     var content = ''
     // for(item in x)
@@ -24,11 +25,18 @@ for(let i=0;i<localStorage.length;i++)
     <h3> Username :- ${x['username']}</h3>
     <h3> Role :- ${x['role']}</h3>
     </div>
+    <button class = 'logout' id='delete_id_${localStorage.key(i)}'>Delete</button>
     `
 
     outer_div.innerHTML = content;
     outer_div.style.display = 'block';
     document.getElementById('container').appendChild(outer_div);
 
+    const del = document.getElementById(`delete_id_${localStorage.key(i)}`)
+    del.addEventListener('click' , ()=>{
+        localStorage.removeItem(localStorage.key(i));
+        window.location.reload();
+    })
+    }
 
 }
