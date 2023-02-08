@@ -1,11 +1,14 @@
+import os
 from flask import Flask,jsonify,request
 from flask_sqlalchemy import SQLAlchemy
 from models import db,Employee
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:sheetal@localhost:5432/emp"
-# app.config['SQLALCHEMY_BINDS'] = None
+# app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:sheetal@localhost/emp"
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URI')
+# # app.config['SQLALCHEMY_BINDS'] = None
+
 
 db.init_app(app)
 
@@ -92,6 +95,6 @@ def delete_emp(id):
 
   return jsonify({"error":"Employee not found"})
  
-
+app.debug=True
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0')
