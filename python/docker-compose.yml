@@ -1,0 +1,22 @@
+version: '2.2'
+services:
+  backend:
+      image: postgres 
+      environment:
+        POSTGRES_DB: postgres
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: sheetal
+
+  frontend:
+    build: .
+    environment:
+      FLASK_APP: app.py
+      FLASK_ENV: developement
+      DATABASE_URI: postgresql://postgres:sheetal@backend/postgres
+
+    ports:
+      - 5000:5000
+    depends_on: 
+      - backend
+
+  

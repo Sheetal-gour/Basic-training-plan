@@ -8,7 +8,7 @@ app = Flask(__name__)
 # app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:sheetal@localhost/emp"
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URI')
 # # app.config['SQLALCHEMY_BINDS'] = None
-
+# comment
 
 db.init_app(app)
 
